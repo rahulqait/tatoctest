@@ -1,0 +1,45 @@
+package testng_demo;
+import static org.testng.Assert.assertEquals;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+import tatoc.tatoc;
+
+public class testtatoc 
+{
+  tatoc t = new tatoc();
+	
+  @Test(priority = 1)
+	public void test1()
+	{
+	t.ex1();	
+	}
+	
+	@Test(priority = 2)
+	public void test2()
+	{
+	t.FrameDungeon();	
+	}
+	
+	@Test(priority = 3)
+	public void test3()
+	{
+	t.dragaround();	
+	}
+	
+	@Test(priority = 4)
+	public void test4()
+	{
+	t.windowpopup();	
+	}
+	
+	@Test(priority = 5)
+	public void test5()
+	{
+	t.cookie();	
+	}
+  
+}
